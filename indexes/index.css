@@ -690,20 +690,22 @@ body {
   left: 50%;
   bottom: 8px;
   width: 86%;
-  min-height: 70%;
+  height: min(210px, 55vh);
+  min-height: 0;
   transform: translate(-50%, 6%) scale(0.94);
   background: #fff9ee;
   border-radius: 6px;
   padding: 1.4rem 1.2rem;
+  overflow-y: auto;
   box-shadow: 0 18px 30px -14px rgba(0, 0, 0, 0.5);
-  z-index: 2;
+  z-index: 5;
   opacity: 0;
   transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.35s,
     opacity 0.5s ease 0.35s;
 }
 
 .envelope-overlay.is-open .letter {
-  transform: translate(-50%, -78%) scale(1);
+  transform: translate(-50%, -45%) scale(1);
   opacity: 1;
 }
 
