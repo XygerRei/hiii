@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hi po sorry sa abala survey lang </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="scene" id="scene">
+
+        <span class="brand"> Kapagod </span>
+
+        <button type="button" class="bear-btn" id="bearBtn" aria-label="Open letter" aria-pressed="false">
+            <svg viewBox="0 0 64 64" class="bear-svg" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="14" r="8"></circle>
+                <circle cx="48" cy="14" r="8"></circle>
+                <circle cx="32" cy="34" r="22"></circle>
+                <circle cx="24" cy="30" r="3" class="bear-eye"></circle>
+                <circle cx="40" cy="30" r="3" class="bear-eye"></circle>
+                <circle cx="32" cy="38" r="4" class="bear-nose"></circle>
+            </svg>
+        </button>
+
+        <!-- NEW: envelope / letter overlay -->
+        <div class="envelope-overlay" id="envelopeOverlay">
+            <div class="envelope" id="envelope">
+                <div class="envelope-back"></div>
+                <div class="letter" id="letter">
+                    <p>
+                    <h4>
+                        Hi po sorry sa abala also not to overwhelm you or disturb you but I just want to say that I like
+                        you and i want to know you. Thank you so much po and I hope you have a great day!
+                    </h4>
+                    </p>
+                </div>
+                <div class="envelope-flap"></div>
+                <div class="envelope-front-left"></div>
+                <div class="envelope-front-right"></div>
+            </div>
+            <button type="button" class="close-letter" id="closeLetter" aria-label="Close letter">✕</button>
+        </div>
+
+        <div class="lamp-column">
+            <div class="room-glow"></div>
+
+            <div class="fixture"></div>
+            <div class="wire"></div>
+            <div class="bulb"><span class="filament"></span></div>
+
+            <div class="tag">Kapagod</div>
+
+            <button type="button" class="pull-switch" id="pullSwitch" aria-pressed="false"
+                aria-label="Pull the cord to turn the lamp on or off">
+                <span class="pull-string"></span>
+                <span class="pull-knob"></span>
+            </button>
+
+            <p class="hint" id="hintText">Pull the cord to help me see</p>
+        </div>
+
+        <div class="stage">
+            <div class="orbit-frame">
+
+                <p class="dark-hint">My world seems a little bit too dark.<br>Can you light it up?</p>
+
+                <div class="ring-wrap" id="ringWrap">
+                    <div class="ring" id="ring" style="--quantity: 10;">
+                        <!-- CARD 1: change --card-image for the artwork and the audio src. -->
+                        <div class="card"
+                            style="--index: 0; --color-card: 247, 223, 30; --card-image: url('photos/OIP.webp');">
+                            <div class="img" style="--logo-url: var(--card-image);"></div>
+                            <button class="audio-card" type="button" aria-label="Play card 1 audio"
+                                aria-pressed="false">
+                                <span class="audio-play" aria-hidden="true"></span>
+                            </button>
+                            <audio class="card-audio" preload="none" src="music/lifetime.mp3"></audio>
+                        </div>
+                        <!-- CARD 2: replace the URL in --logo-url. -->
+                        <div class="card" style="--index: 1; --color-card: 97, 175, 239;">
+                            <div class="img" style="--logo-url: url('photos/overoctober.jpg');">
+                            </div>
+                            <button class="audio-card" type="button" aria-label="Play card 2 audio"
+                                aria-pressed="false"><span class="audio-play" aria-hidden="true"></span></button>
+                            <!-- Replace with audio/audio-02.mp3 when that file exists. -->
+                            <audio class="card-audio" preload="none" src="music/ikot.mp3"></audio>
+                        </div>
+                        <!-- CARD 3: replace the URL in --logo-url. -->
+                        <div class="card" style="--index: 2; --color-card: 49, 120, 198;">
+                            <div class="img" style="--logo-url: url('photos/risk it.jpg');">
+                            </div>
+                            <button class="audio-card" type="button" aria-label="Play card 3 audio"
+                                aria-pressed="false"><span class="audio-play" aria-hidden="true"></span></button>
+                            <!-- Replace with audio/audio-03.mp3 when that file exists. -->
+                            <audio class="card-audio" preload="none" src="music/Risk It All.mp3"></audio>
+                        </div>
+                        <!-- CARD 4: replace the URL in --logo-url. -->
+                        <div class="card" style="--index: 3; --color-card: 104, 160, 99;">
+                            <div class="img" style="--logo-url: url('photos/what if we try.png');">
+                            </div>
+                            <button class="audio-card" type="button" aria-label="Play card 4 audio"
+                                aria-pressed="false"><span class="audio-play" aria-hidden="true"></span></button>
+                            <!-- Replace with audio/audio-04.mp3 when that file exists. -->
+                            <audio class="card-audio" preload="none" src="music/What If We Try.mp3"></audio>
+                        </div>
+                        <!-- CARD 5: replace the URL in --logo-url. -->
+                        <div class="card" style="--index: 4; --color-card: 55, 118, 171;">
+                            <div class="img" style="--logo-url: url('photos/thai.png');">
+                            </div>
+                            <button class="audio-card" type="button" aria-label="Play card 5 audio"
+                                aria-pressed="false"><span class="audio-play" aria-hidden="true"></span></button>
+                            <!-- Replace with audio/audio-05.mp3 when that file exists. -->
+                            <audio class="card-audio" preload="none" src="music/เธอไปแดกอะไรมา.mp3"></audio>
+                        </div>
+                        <!-- CARD 6: replace the URL in --logo-url. -->
+                        <div class="card" style="--index: 5; --color-card: 233, 84, 32;">
+                            <div class="img" style="--logo-url: url('photos/picture.jpg');">
+                            </div>
+                            <button class="audio-card" type="button" aria-label="Play card 6 audio"
+                                aria-pressed="false"><span class="audio-play" aria-hidden="true"></span></button>
+                            <!-- Replace with audio/audio-06.mp3 when that file exists. -->
+                            <audio class="card-audio" preload="none" src="music/Pictures.mp3"></audio>
+                        </div>
+                        <!-- CARD 7: replace the URL in --logo-url. -->
+                        <div class="card" style="--index: 6; --color-card: 38, 77, 228;">
+                            <div class="img" style="--logo-url: url('photos/smith.png');">
+                            </div>
+                            <button class="audio-card" type="button" aria-label="Play card 7 audio"
+                                aria-pressed="false"><span class="audio-play" aria-hidden="true"></span></button>
+                            <!-- Replace with audio/audio-07.mp3 when that file exists. -->
+                            <audio class="card-audio" preload="none" src="music/Back to the Old House.mp3"></audio>
+                        </div>
+                        <!-- CARD 8: replace the URL in --logo-url. -->
+                        <div class="card" style="--index: 7; --color-card: 240, 80, 51;">
+                            <div class="img" style="--logo-url: url('photos/panaginip.jpg');">
+                            </div>
+                            <button class="audio-card" type="button" aria-label="Play card 8 audio"
+                                aria-pressed="false"><span class="audio-play" aria-hidden="true"></span></button>
+                            <!-- Replace with audio/audio-08.mp3 when that file exists. -->
+                            <audio class="card-audio" preload="none" src="music/Panaginip.mp3"></audio>
+                        </div>
+                        <!-- CARD 9: replace the URL in --logo-url. -->
+                        <div class="card" style="--index: 8; --color-card: 36, 150, 237;">
+                            <div class="img" style="--logo-url: url('photos/stacey.webp');">
+                            </div>
+                            <button class="audio-card" type="button" aria-label="Play card 9 audio"
+                                aria-pressed="false"><span class="audio-play" aria-hidden="true"></span></button>
+                            <!-- Replace with audio/audio-09.mp3 when that file exists. -->
+                            <audio class="card-audio" preload="none" src="music/Fall In Love Alone.mp3"></audio>
+                        </div>
+                        <!-- CARD 10: replace the URL in --logo-url. -->
+                        <div class="card" style="--index: 9; --color-card: 229, 53, 143;">
+                            <div class="img" style="--logo-url: url('photos/chance.webp');">
+                            </div>
+                            <button class="audio-card" type="button" aria-label="Play card 10 audio"
+                                aria-pressed="false"><span class="audio-play" aria-hidden="true"></span></button>
+                            <!-- Replace with audio/audio-10.mp3 when that file exists. -->
+                            <audio class="card-audio" preload="none" src="music/Take A Chance With Me.mp3"></audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const scene = document.getElementById('scene');
+        const pullSwitch = document.getElementById('pullSwitch');
+        const hintText = document.getElementById('hintText');
+        const ringWrap = document.getElementById('ringWrap');
+        const ring = document.getElementById('ring');
+        const audioCards = document.querySelectorAll('.audio-card');
+        const cardAudios = document.querySelectorAll('.card-audio');
+
+        let isOn = false;
+        let animating = false;
+        let rotation = 0;
+        let lastFrame = performance.now();
+        let pointerStartX = 0;
+        let rotationStart = 0;
+        let isDragging = false;
+        let suppressClick = false;
+
+        const updateAudioButton = (button, audio) => {
+            const playing = !audio.paused;
+            button.classList.toggle('is-playing', playing);
+            button.setAttribute('aria-pressed', String(playing));
+            button.setAttribute('aria-label', `${playing ? 'Pause' : 'Play'} card audio`);
+        };
+
+        audioCards.forEach((button, index) => {
+            const audio = cardAudios[index];
+
+            audio.addEventListener('play', () => updateAudioButton(button, audio));
+            audio.addEventListener('pause', () => updateAudioButton(button, audio));
+            audio.addEventListener('ended', () => updateAudioButton(button, audio));
+            audio.addEventListener('error', () => {
+                updateAudioButton(button, audio);
+                hintText.textContent = `Cannot play ${audio.currentSrc || 'this audio file'}`;
+            });
+
+            button.addEventListener('pointerdown', (event) => {
+                event.stopPropagation();
+                suppressClick = false;
+            });
+
+            button.addEventListener('click', async (event) => {
+                event.stopPropagation();
+                if (suppressClick) return;
+
+                try {
+                    if (audio.paused) {
+                        cardAudios.forEach((otherAudio, otherIndex) => {
+                            if (otherIndex !== index) {
+                                otherAudio.pause();
+                                updateAudioButton(audioCards[otherIndex], otherAudio);
+                            }
+                        });
+                        const playRequest = audio.play();
+                        if (playRequest) await playRequest;
+                    } else {
+                        audio.pause();
+                    }
+                    updateAudioButton(button, audio);
+                } catch {
+                    updateAudioButton(button, audio);
+                    const source = audio.getAttribute('src') || audio.querySelector('source')?.getAttribute('src');
+                    hintText.textContent = `Cannot play ${source || `card ${index + 1} audio`}`;
+                }
+            });
+        });
+
+        const renderRing = () => {
+            ring.style.transform = `perspective(var(--perspective)) rotateX(var(--rotateX)) rotateY(${rotation}deg)`;
+        };
+
+        const spinRing = (now) => {
+            const elapsed = now - lastFrame;
+            lastFrame = now;
+
+            if (isOn && !isDragging) {
+                rotation += elapsed * 0.01385;
+                renderRing();
+            }
+
+            window.requestAnimationFrame(spinRing);
+        };
+
+        ringWrap.addEventListener('pointerdown', (event) => {
+            if (!isOn) return;
+
+            isDragging = true;
+            suppressClick = false;
+            pointerStartX = event.clientX;
+            rotationStart = rotation;
+            ringWrap.setPointerCapture(event.pointerId);
+            ringWrap.classList.add('is-grabbing');
+        });
+
+        ringWrap.addEventListener('pointermove', (event) => {
+            if (!isDragging) return;
+
+            const distance = event.clientX - pointerStartX;
+            if (Math.abs(distance) > 4) suppressClick = true;
+            rotation = rotationStart + distance * 0.55;
+            renderRing();
+        });
+
+        const stopDragging = (event) => {
+            if (!isDragging) return;
+
+            isDragging = false;
+            ringWrap.releasePointerCapture(event.pointerId);
+            ringWrap.classList.remove('is-grabbing');
+            window.setTimeout(() => {
+                suppressClick = false;
+            }, 0);
+        };
+
+        ringWrap.addEventListener('pointerup', stopDragging);
+        ringWrap.addEventListener('pointercancel', stopDragging);
+        ringWrap.addEventListener('click', (event) => {
+            if (suppressClick) event.preventDefault();
+        }, true);
+
+        renderRing();
+        window.requestAnimationFrame(spinRing);
+
+        pullSwitch.addEventListener('click', () => {
+            if (animating) return;
+            animating = true;
+
+            pullSwitch.classList.add('pulling');
+            isOn = !isOn;
+            pullSwitch.setAttribute('aria-pressed', String(isOn));
+            hintText.textContent = isOn ? 'Pull again to switch off' : 'Pull the cord to switch on';
+
+            window.setTimeout(() => {
+                scene.classList.toggle('is-on', isOn);
+            }, 150);
+
+            window.setTimeout(() => {
+                pullSwitch.classList.remove('pulling');
+                animating = false;
+            }, 560);
+        });
+    </script>
+    <div id="bear-container"></div>
+    <script src="ondex.js"></script>
+</body>
+
+</html>
